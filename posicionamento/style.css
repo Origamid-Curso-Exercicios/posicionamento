@@ -22,7 +22,9 @@
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 24em);
+  justify-content: center;
+  height: auto;
 }
 
 .content-flex {
@@ -91,6 +93,12 @@ body {
   width: 80%;
 }
 
+.box {
+  background-color: aqua;
+  height: 24em;
+  border: #111 solid;
+}
+
 /* Header */
 .header {
   height: 10em;
@@ -117,6 +125,7 @@ body {
 /* Main */
 .main {
   background-color: rgb(255, 255, 255);
+  height: auto;
 }
 
 /* Content */
