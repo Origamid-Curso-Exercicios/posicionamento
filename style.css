@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eeecec;
+  display: grid;
+  justify-items: center;
+  gap: 3.75em;
+  margin-top: 3.75em;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+/* Heaser */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25em;
+}
+
+.logo {
+  max-width: 10em;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25em;
+}
+
+.navigation .link {
+  background-color: #f7f7f7;
+  padding: 0.93em 1.8em;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.bike-pic {
+  max-width: 100%;
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Content */
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 62.5em;
+}
+
+.detail {
+  width: 3.75em;
+  height: 0.25em;
+  background-color: #ee2211;
+  position: absolute;
+  top: 1.8em;
+  right: -1.8em;
+}
+
+.box {
+  background-color: #fff;
+  padding: 2.4em;
+}
+
+.intro {
+  display: grid;
+  align-content: center;
+  justify-items: end;
+  gap: 1.25em;
+  text-align: right;
+  position: relative;
+}
+
+.btn {
+  background-color: #ee2211;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.9em 1.8em;
+  border-radius: 5px;
+}
