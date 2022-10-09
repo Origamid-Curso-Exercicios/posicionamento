@@ -20,58 +20,45 @@
   justify-content: center;
 }
 
+.box-grid {
+  display: grid;
+  align-content: center;
+  gap: 1em;
+  justify-content: center;
+}
+
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(2, 24em);
+  grid-template-columns: repeat(2, 35em);
   justify-content: center;
   height: auto;
 }
 
-.content-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.content-grid {
+  display: grid;
+  align-content: center;
+  justify-items: end;
   gap: 2em;
-  align-items: flex-end;
 }
 
-.paragraph-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.list {
+.list-grid {
   display: grid;
-  grid-template-columns: 1rem 23rem;
-  gap: 1em;
+  grid-template-columns: 1em 17em;
+  gap: 1em 2em;
 }
 
-.list p {
-  grid-column: 2;
+.list-grid h3 {
+  text-align: left;
 }
-
-.list-padding {
-  padding: 2.5em 0 0 3em;
-}
-
-.footer {
-  grid-column: 1 / -1;
-  display: grid;
-  align-items: center;
+.list-grid p {
+  grid-column: 2 / -1;
+  text-align: left;
+  font-size: 1.2em;
 }
 
 /* Margins - padding */
 .general-margins {
   margin: 3.5em auto;
-}
-
-.content-margin {
-  margin: 2em;
-}
-
-.content-padding {
-  padding: 2em 0.7em 2em 2em;
 }
 
 .figure .pic {
@@ -91,12 +78,12 @@ body {
 
 .container {
   width: 80%;
+  height: auto;
 }
 
 .box {
-  background-color: aqua;
+  width: 35em;
   height: 24em;
-  border: #111 solid;
 }
 
 /* Header */
@@ -125,6 +112,7 @@ body {
 /* Main */
 .main {
   background-color: rgb(255, 255, 255);
+  margin: auto;
   height: auto;
 }
 
@@ -134,16 +122,21 @@ body {
   text-align: right;
 }
 
+.product-title {
+  font-size: 2.3em;
+}
+.content-description {
+  text-align: end;
+  padding: 2em;
+}
+
 .descriptive {
-  font-weight: bold;
+  font-size: 1.2em;
+  padding-left: 5em;
 }
 
-.bike-figure {
-  width: auto;
-}
-
-.product-pic {
-  width: 100%;
+.box .product-pic {
+  width: 32.5em;
 }
 
 .btn {
@@ -156,7 +149,6 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  align-self: end;
 }
 
 /* Vantages */
@@ -165,12 +157,12 @@ body {
   text-align: right;
   color: #c6c6c6;
   background-color: #f7f7f7;
-  font-size: 3em;
-}
-
-/* List */
-.list {
-  width: 24em;
+  font-size: 4em;
+  width: inherit;
+  height: inherit;
+  display: grid;
+  align-items: center;
+  padding-right: 0.5em;
 }
 
 /* Footer */
@@ -180,4 +172,12 @@ body {
   text-align: center;
   font-size: 20px;
   height: 5em;
+}
+
+.footer-margin {
+  margin: 3em 0 0;
+}
+
+.footer p {
+  padding: 2em;
 }
