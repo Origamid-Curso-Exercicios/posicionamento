@@ -13,6 +13,11 @@ body {
   margin-top: 3.75em;
 }
 
+.box {
+  background-color: #fff;
+  padding: 2.4em;
+}
+
 p {
   font-size: 20px;
   line-height: 1.3;
@@ -56,6 +61,7 @@ p {
 
 /* Content */
 
+/* Intro */
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -69,11 +75,6 @@ p {
   position: absolute;
   top: 1.8em;
   right: -1.8em;
-}
-
-.box {
-  background-color: #fff;
-  padding: 2.4em;
 }
 
 .intro {
@@ -92,4 +93,41 @@ p {
   text-transform: uppercase;
   padding: 0.9em 1.8em;
   border-radius: 5px;
+}
+
+/* Subtitle */
+
+.subtitle {
+  font-size: 4em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  align-self: center;
+  padding: 0 0.5em;
+}
+
+/* Vantages */
+
+.vantages .vantages-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5em 1.25em;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.vantages-item .vantages-parag {
+  grid-column: 2;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.footer .parag-footer {
+  padding: 1em;
 }
