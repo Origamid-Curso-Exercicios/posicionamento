@@ -4,17 +4,28 @@
   padding: 0;
 }
 
+:root {
+  --default-em: 3.75em;
+  --logo: 10rem;
+  --family-name: Arial, Helvetica, sans-serif;
+  --general-bg-color: #eeecec;
+  --defautl-bg-color: #f7f7f7;
+  --defaut-text-color: #000;
+  --btn-bg-color:#ee2211;
+  --hover-btn:#991a0e;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #eeecec;
+  font-family: var(--family-name);
+  background-color: var(--general-bg-color);
   display: grid;
   justify-items: center;
-  gap: 3.75em;
-  margin-top: 3.75em;
+  gap: var(--default-em);
+  margin-top: var(--default-em);
 }
 
 .box {
-  background-color: #fff;
+  background-color: var(--defautl-bg-color);
   padding: 2.4em;
 }
 
@@ -32,15 +43,15 @@ p {
 }
 
 .logo {
-  max-width: 10rem;
+  max-width: var(--logo);
 }
 
 .navigation .menu .link {
-  background-color: #f7f7f7;
+  background-color: var(--defautl-bg-color);
   padding: 0.93em 1.8em;
   border-radius: 5px;
   text-transform: uppercase;
-  color: #000;
+  color: var(--defaut-text-color);
 }
 
 .menu {
@@ -58,7 +69,7 @@ p {
 }
 
 .navigation .menu .link:hover {
-  border: #ee2211 solid 0.1rem;
+  border: var(--btn-bg-color) solid 0.1rem;
 }
 
 /* Content */
@@ -67,7 +78,6 @@ p {
 .content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  /* max-width: 60em;    */
 }
 
 .intro {
@@ -90,7 +100,7 @@ p {
   position: absolute;
   width: 3rem;
   height: 0.25rem;
-  background-color: #ee2211;
+  background-color: var(--btn-bg-color);
   top: 1.8rem;
   right: -1.5rem;
 }
@@ -99,8 +109,8 @@ p {
   font-size: 2rem;
 }
 .btn {
-  background-color: #ee2211;
-  color: #fff;
+  background-color: var(--btn-bg-color);
+  color: var(--defautl-bg-color);
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.9em 1.8em;
@@ -108,7 +118,7 @@ p {
 }
 
 .btn:hover {
-  background-color: #991a0e;
+  background-color: var(--hover-btn);
 }
 
 /* Subtitle */
@@ -191,7 +201,7 @@ p {
     gap: 0.75rem;
   }
 
-  .intro{
+  .intro {
     text-align: left;
     justify-items: start;
   }
