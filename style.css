@@ -11,8 +11,8 @@
   --general-bg-color: #eeecec;
   --defautl-bg-color: #f7f7f7;
   --defaut-text-color: #000;
-  --btn-bg-color:#ee2211;
-  --hover-btn:#991a0e;
+  --btn-bg-color:#ae1515;
+  --hover-btn:#e34e4e;
 }
 
 body {
@@ -136,7 +136,7 @@ p {
 /* Vantages */
 
 .vantages:nth-child(odd) {
-  background-color: #eeecec;
+  background-color: var(--general-bg-color);
 }
 
 .vantages .vantages-item {
@@ -152,13 +152,13 @@ p {
 }
 
 .vantages-item:hover {
-  border-left: #ee2211 solid 0.2rem;
+  border-left: var(--hover-btn) solid 0.2rem;
 }
 
 /* Footer */
 
 .footer {
-  background-color: #fff;
+  background-color: var(--defautl-bg-color);
   width: 100%;
   text-align: center;
 }
