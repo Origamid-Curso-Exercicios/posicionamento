@@ -11,13 +11,27 @@
   --general-bg-color: #eeecec;
   --defautl-bg-color: #f7f7f7;
   --defaut-text-color: #000;
-  --btn-bg-color:#ee2211;
-  --hover-btn:#991a0e;
+  --btn-bg-color: #ee2211;
+  --btn:#ffffff;
+  --hover-btn: #991a0e;
+  --subtitle: rgba(0, 0, 0, 0.2);
+  --onda: url(./img/onda.svg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --defautl-bg-color: #111111;
+    --general-bg-color: #000000;
+    --defaut-text-color: #ffffff;
+    --subtitle: rgba(255, 255, 255, 0.2);
+    --onda: url(./img/onda-escura.svg);
+  }
 }
 
 body {
   font-family: var(--family-name);
   background-color: var(--general-bg-color);
+  color: var(--defaut-text-color);
   display: grid;
   justify-items: center;
   gap: var(--default-em);
@@ -108,9 +122,10 @@ p {
 .intro .title {
   font-size: 2rem;
 }
+
 .btn {
   background-color: var(--btn-bg-color);
-  color: var(--defautl-bg-color);
+  color: var(--btn);
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.9em 1.8em;
@@ -124,10 +139,10 @@ p {
 /* Subtitle */
 
 .subtitle {
-  background-image: url(./img/onda.svg);
+  background-image: var(--onda);
   font-size: 4em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.2);
+  color: var(--subtitle);
   text-align: right;
   align-self: center;
   padding: 0 0.5em;
@@ -136,7 +151,7 @@ p {
 /* Vantages */
 
 .vantages:nth-child(odd) {
-  background-color: #eeecec;
+  background-color: var(--general-bg-color);
 }
 
 .vantages .vantages-item {
@@ -158,7 +173,7 @@ p {
 /* Footer */
 
 .footer {
-  background-color: #fff;
+  background-color: var(--defautl-bg-color);
   width: 100%;
   text-align: center;
 }
